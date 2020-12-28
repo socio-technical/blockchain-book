@@ -5,5 +5,9 @@ multilingual = false
 src = "src"
 title = "Blockchain: A New Socio-Technical Environment"
 
+[output.html]
+git-repository-url = "https://github.com/socio-technical/socio-technical-Blockchain-A-New-Socio-Technical-Environment/"
+git-repository-icon = "fa-github"
+
 [build]
 build-dir = "docs"
