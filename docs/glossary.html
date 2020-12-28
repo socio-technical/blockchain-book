@@ -1,0 +1,651 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Glossary - Blockchain: A New Socio-Technical Environment</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Blockchain as a Historical Construct</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> The Design and Implementation of the Bitcoin Protocol</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> Blockchain as a Distributed Ledger Technology</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Blockchain Socialisation Patterns</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Designing Through Blockchain </a></li><li class="chapter-item expanded "><a href="conclusion.html"><strong aria-hidden="true">6.</strong> Conclusion</a></li><li class="chapter-item expanded affix "><a href="contributors.html">Contributors</a></li><li class="chapter-item expanded affix "><a href="glossary.html" class="active">Glossary</a></li><li class="chapter-item expanded affix "><a href="references.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blockchain: A New Socio-Technical Environment</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#glossary" id="glossary">Glossary</a></h1>
+<p>Term Definition</p>
+<p>+--------------------+------------------------------------------------+
+| ASCII-8            | &gt; American Standard Code for Information       |
+|                    | &gt; Interchange (ASCII) is a character encoding  |
+|                    | &gt; standard for electronic communication.       |
+|                    | &gt; ASCII-8 has a bit width of 8 bit.            |
++====================+================================================+
+| ASIC               | An application-specific integrated circuit     |
+|                    | (ASIC) is a piece of hardware specifically     |
+|                    | designed for a particular use.                 |
++--------------------+------------------------------------------------+
+| Bitcoin (BTC)      | &gt; Bitcoin (BTC) is the cryptocurrency of the   |
+|                    | &gt; Bitcoin blockchain. A Bitcoin is a token     |
+|                    | &gt; with a value derived from its use a for      |
+|                    | &gt; payment and wealth storage.                  |
++--------------------+------------------------------------------------+
+| Blockchain         | &gt; A blockchain is a database replicated on     |
+|                    | &gt; many servers or computers owned or governed  |
+|                    | &gt; by independent legal entities.               |
++--------------------+------------------------------------------------+
+| Block time         | The average time is takes for new blocks (of   |
+|                    | transactions) to be added to the blockchain.   |
++--------------------+------------------------------------------------+
+| Chaincode          | &gt; Smart contract in Hyperledger is called      |
+|                    | &gt; 'chaincode'.                                 |
++--------------------+------------------------------------------------+
+| Consensus protocol | &gt; A mechanism to decide which block of all the |
+|                    | &gt; blocks mined is finally added to the         |
+|                    | &gt; blockchain.                                  |
++--------------------+------------------------------------------------+
+| CPU                | &gt; Central processing unit (CPU), alternatively |
+|                    | &gt; known as the processor. It carries out the   |
+|                    | &gt; instruction of computer programs by          |
+|                    | &gt; performing the basic arithmetic, logical,    |
+|                    | &gt; control, and input/output (I/O) operations   |
+|                    | &gt; specified by the instructions.               |
++--------------------+------------------------------------------------+
+| Cryptocurrency     | &gt; A cryptocurrency (or crypto-currency) is a   |
+|                    | &gt; digital asset designed to work as a medium   |
+|                    | &gt; of exchange that uses cryptography to secure |
+|                    | &gt; its transactions, to control the creation of |
+|                    | &gt; additional units, and to verify the transfer |
+|                    | &gt; of assets.                                   |
++--------------------+------------------------------------------------+
+| Cryptography       | &gt; Cryptography is associated with the process  |
+|                    | &gt; of converting ordinary plain text into       |
+|                    | &gt; unintelligible text and                      |
++--------------------+------------------------------------------------+</p>
+<p>vice versa. It is a method of storing and transmitting data in a
+particular form, so that only those for whom it is intended can read
+and process it. Cryptography not only protects data from theft or
+alteration, it can also be used for user authentication.</p>
+<p>+----------------------------------+----------------------------------+
+| DAO Decentralised autonomous     | DAOs consist of multiple smart   |
+| organisations                    | contracts, which are combined    |
+|                                  | with a governance mechanism and  |
+|                                  | interact with each other without |
+|                                  | (or with minimum) human          |
+|                                  | intervention.                    |
++==================================+==================================+
+| dApps Decentralised applications | A decentralised application or   |
+|                                  | dApp is an application of a      |
+|                                  | blockchain. More precisely, the  |
+|                                  | backend code runs on a           |
+|                                  | blockchain, while the frontend   |
+|                                  | and user interface of the        |
+|                                  | application can be written in    |
+|                                  | any programming language.        |
++----------------------------------+----------------------------------+
+| Digital signature                | A digital signature uses the     |
+|                                  | private key to sign data, after  |
+|                                  | which the corresponding public   |
+|                                  | key of the signer can be used to |
+|                                  | verify that the signature is     |
+|                                  | valid.                           |
++----------------------------------+----------------------------------+
+| DVP Delivery vs payment          | Delivery versus payment is a     |
+|                                  | settlement procedure where the   |
+|                                  | payment for a security is due at |
+|                                  | the time of delivery.            |
++----------------------------------+----------------------------------+
+| Ether (ETH)                      | Ether (ETH) is the               |
+|                                  | cryptocurrency of the Ethereum   |
+|                                  | platform.                        |
++----------------------------------+----------------------------------+
+| Ethereum                         | Ethereum is an open-source,      |
+|                                  | public, blockchain-based         |
+|                                  | distributed computing platform   |
+|                                  | featuring smart contract         |
+|                                  | (scripting) functionality.       |
++----------------------------------+----------------------------------+
+| EVM                              | The Ethereum virtual machine     |
+|                                  | (C38EVM) is responsible for code |
+|                                  | execution on the Ethereum        |
+|                                  | network.                         |
+|                                  |                                  |
+|                                  | &gt; Smart contracts are run by the |
+|                                  | &gt; EVM.                           |
++----------------------------------+----------------------------------+
+| Fiat money/currency              | &gt; Fiat money is a currency that  |
+|                                  | &gt; a government has declared to   |
+|                                  | &gt; be legal tender. Fiat money    |
+|                                  | &gt; has no intrinsic value.        |
+|                                  | &gt; Instead, its value depends on  |
+|                                  | &gt; supply and demand of the       |
+|                                  | &gt; currency.                      |
++----------------------------------+----------------------------------+
+| Full nodes                       | &gt; see Miners                     |
++----------------------------------+----------------------------------+</p>
+<p>+--------------------+------------------------------------------------+
+| GPU                | &gt; Graphics processing unit (GPU) is also known |
+|                    | &gt; as the graphics card. It is designed to      |
+|                    | &gt; rapidly manipulate and alter memory to       |
+|                    | &gt; accelerate the creation of images to output  |
+|                    | &gt; to a display.                                |
++====================+================================================+
+| Hard fork          | &gt; A hard fork is a radical way to update a     |
+|                    | &gt; blockchain protocol. It involves splitting   |
+|                    | &gt; the path of a blockchain by invalidating     |
+|                    | &gt; transactions confirmed by nodes that have    |
+|                    | &gt; not been updated to the new version of the   |
+|                    | &gt; protocol. This essentially creates two       |
+|                    | &gt; chains: one running the new protocol and one |
+|                    | &gt; running the old protocol version.            |
++--------------------+------------------------------------------------+
+| Hash (value)       | The output of a hash function is the hash      |
+|                    | value.                                         |
++--------------------+------------------------------------------------+
+| Hash Function      | A hash function is an algorithm that converts  |
+|                    | data of any size into a fix length data        |
+|                    | string. As a one-way function, the output of   |
+|                    | the function does not indicate what the input  |
+|                    | was.                                           |
++--------------------+------------------------------------------------+
+| Hashing power      | &gt; The hashing power is the computational power |
+|                    | &gt; of a miner or mining pool. It represents the |
+|                    | &gt; speed at which the cryptographic puzzle      |
+|                    | &gt; could be solved at a given difficulty level. |
++--------------------+------------------------------------------------+
+| Hexadecimal system | &gt; Hexadecimal system or hex uses 16 symbols    |
+|                    | &gt; (numbers 0--9 and characters a-f). As each   |
+|                    | &gt; hexadecimal digit represents four binary     |
+|                    | &gt; digits (bits), it allows a more              |
+|                    | &gt; human-friendly representation of             |
+|                    | &gt; binary-coded values. One hexadecimal digit   |
+|                    | &gt; represents 4 bits, which is half of a byte   |
+|                    | &gt; (8 bits). For example, a single byte can     |
+|                    | &gt; have values ranging from 00000000 to         |
+|                    | &gt; 11111111 in binary form, but this may be     |
+|                    | &gt; more conveniently represented as 00 to FF in |
+|                    | &gt; hexadecimal.                                 |
++--------------------+------------------------------------------------+
+| ICO                | An initial coin offering (ICO) is a means of   |
+|                    | crowdfunding centred around cryptocurrency,    |
+|                    | which can be a source of capital for start-up  |
+|                    | companies. In an ICO, some quantity of the     |
+|                    | crowdfunded cryptocurrency is preallocated to  |
+|                    | investors in the form of 'tokens', in          |
++--------------------+------------------------------------------------+</p>
+<p>exchange for legal tender or other cryptocurrencies, such as Bitcoin
+or Ethereum. These tokens become functional units of currency if or
+when the ICO's funding goal is met, and the project launches.</p>
+<p>+----------------------------------+----------------------------------+
+| IoT Internet of things           | &gt; The Internet of Things is a    |
+|                                  | &gt; network of physical objects    |
+|                                  | &gt; (locks, vehicles, microwaves,  |
+|                                  | &gt; and light bulbs) that use      |
+|                                  | &gt; sensors and software to        |
+|                                  | &gt; connect and exchange data over |
+|                                  | &gt; the Internet.                  |
++==================================+==================================+
+| IPO                              | &gt; In an initial public offering  |
+|                                  | &gt; (IPO), a private company       |
+|                                  | &gt; raises investment capital by   |
+|                                  | &gt; offering its stock to the      |
+|                                  | &gt; public for the first time.     |
++----------------------------------+----------------------------------+
+| Merkle Tree                      | &gt; A Merkle or hash tree is a     |
+|                                  | &gt; data structure that allows for |
+|                                  | &gt; the efficient and securing     |
+|                                  | &gt; verification of large data     |
+|                                  | &gt; structures. The data are       |
+|                                  | &gt; divided into pairs and hashed. |
+|                                  | &gt; The resulting hash values are  |
+|                                  | &gt; again paired and hashed        |
+|                                  | &gt; together. This step is         |
+|                                  | &gt; repeated until only a single   |
+|                                  | &gt; hash remains representing the  |
+|                                  | &gt; Merkle root or root hash.      |
++----------------------------------+----------------------------------+
+| Miners                           | Miners are nodes that validate   |
+|                                  | transactions of a blockchain.    |
+|                                  | They are paid for providing the  |
+|                                  | computational power with         |
+|                                  | transaction fees and mining      |
+|                                  | rewards.                         |
++----------------------------------+----------------------------------+
+| Mining pool                      | &gt; A mining pool is the pooling   |
+|                                  | &gt; of resources by miners, who    |
+|                                  | &gt; share their processing power   |
+|                                  | &gt; over a network, to split the   |
+|                                  | &gt; reward equally, according to   |
+|                                  | &gt; the amount of work they        |
+|                                  | &gt; contributed to the probability |
+|                                  | &gt; of finding a block.            |
++----------------------------------+----------------------------------+
+| Mining reward                    | Miners are rewarded for          |
+|                                  | participating in the consensus   |
+|                                  | protocol for adding blocks to    |
+|                                  | the blockchain. In proofof-work, |
+|                                  | the miner that solves the        |
+|                                  | cryptographic puzzle first is    |
+|                                  | given a reward and the           |
+|                                  | transaction fees of all          |
+|                                  | transaction included in his      |
+|                                  | block.                           |
++----------------------------------+----------------------------------+
+| Multisig/ multisignature         | &gt; Multisig or multisignature     |
+| (accounts)                       | &gt; accounts require more than one |
+|                                  | &gt; private key to make a          |
+|                                  | &gt; transaction. To allow for      |
+|                                  | &gt; majorities, at least three     |
+|                                  | &gt; private keys should be         |
+|                                  | &gt; included in a multisignature   |
+|                                  | &gt; account.                       |
++----------------------------------+----------------------------------+
+| Node                             | &gt; Nodes are computers in a       |
+|                                  | &gt; network that store a copy of a |
+|                                  | &gt; database and a set of rules    |
+|                                  | &gt; (consensus protocol) that      |
+|                                  | &gt; define the order in which      |
+|                                  | &gt; nodes may take turns adding    |
+|                                  | &gt; new changes to the database.   |
++----------------------------------+----------------------------------+
+| Nonce                            | &gt; Nonce is a random number used  |
+|                                  | &gt; in the proof-of-work consensus |
+|                                  | &gt; protocol and stands for a      |
+|                                  | &gt; number used once. It is a      |
+|                                  | &gt; block component that is varied |
+|                                  | &gt; in the cryptographic puzzle to |
+|                                  | &gt; find a block hash having a     |
+|                                  | &gt; certain number of leading      |
+|                                  | &gt; zeros.                         |
++----------------------------------+----------------------------------+
+| Parallel/orphaned/ uncled block  | &gt; When two miners provide a      |
+|                                  | &gt; valid proof-of-work at the     |
+|                                  | &gt; same time, they both create a  |
+|                                  | &gt; new block for the blockchain.  |
+|                                  | &gt; Subsequent blocks are then     |
+|                                  | &gt; added to either one of the two |
+|                                  | &gt; blocks, and two blockchains    |
+|                                  | &gt; exist for a brief time.        |
+|                                  | &gt; However, as the time in which  |
+|                                  | &gt; a new block is mined varies    |
+|                                  | &gt; (around the average block      |
+|                                  | &gt; time), after a short period    |
+|                                  | &gt; the longer chain prevails and  |
+|                                  | &gt; the trans-actions, which have  |
+|                                  | &gt; not been incorporated into the |
+|                                  | &gt; main chain, go back into the   |
+|                                  | &gt; pool of non-validated          |
+|                                  | &gt; transactions.                  |
++----------------------------------+----------------------------------+
+| Permissioned                     | Permissioned refers to           |
+|                                  | blockchains that restrict        |
+|                                  | participation in consensus       |
+|                                  | building/validation to a set of  |
+|                                  | users.                           |
++----------------------------------+----------------------------------+
+| Permissionless                   | Permissionless refers to         |
+|                                  | blockchains that allow anyone to |
+|                                  | download and run a node. It is   |
+|                                  | optional to participate in the   |
+|                                  | validation/mining, or they may   |
+|                                  | want a current copy of the       |
+|                                  | blockchain.                      |
++----------------------------------+----------------------------------+
+| PGP                              | &gt; Pretty Good Privacy (PGP) is   |
+|                                  | &gt; an encryption program that     |
+|                                  | &gt; provides cryptographic privacy |
+|                                  | &gt; and authentication for data    |
+|                                  | &gt; communication. PGP is used for |
+|                                  | &gt; signing, encrypting, and       |
+|                                  | &gt; decrypting texts, emails,      |
+|                                  | &gt; files, directories, and whole  |
+|                                  | &gt; disk partitions and to         |
+|                                  | &gt; increase the security of email |
+|                                  | &gt; communications.                |
++----------------------------------+----------------------------------+</p>
+<p>+----------------------+----------------------------------------------+
+| Power of Big         | &gt; An argument on why, although the           |
+|                      | &gt; uniqueness is not tested, identifiers such |
+| Numbers/2256         | &gt; as the hash value are still considered to  |
+|                      | &gt; be unique due to the almost                |
+|                      | &gt; infinitesimally small probability of       |
+|                      | &gt; identical identifiers.                     |
++======================+==============================================+
+| Private key          | The private key allows the decryption of a   |
+|                      | message encrypted with the corresponding     |
+|                      | public key.                                  |
++----------------------+----------------------------------------------+
+| Proof-of-authority   | &gt; Proof-of-authority is a consensus          |
+|                      | &gt; mechanism where validators stake their     |
+| (PoA)                | &gt; identity and attached good reputation.     |
++----------------------+----------------------------------------------+
+| Proof-of-stake (PoS) | Proof-of-stake is a consensus protocol based |
+|                      | on validators staking an amount of their     |
+|                      | wealth as collateral for the right to        |
+|                      | validate blocks of transactions. The         |
+|                      | probability they are assigned a block to     |
+|                      | validate is proportional to the size of      |
+|                      | their stake.                                 |
++----------------------+----------------------------------------------+
+| Proof-of-work (PoW)  | &gt; Proof-or-work is a piece of data which is  |
+|                      | &gt; costly to produce but easy for others to   |
+|                      | &gt; verify and satisfies certain requirements. |
+|                      | &gt; It is also a type of consensus protocol    |
+|                      | &gt; based on showing you have successfully     |
+|                      | &gt; produced a proof of work.                  |
++----------------------+----------------------------------------------+
+| Public key           | &gt; The public key allows encrypting messages  |
+|                      | &gt; that only owners of the corresponding      |
+|                      | &gt; private key can decrypt. The owner can     |
+|                      | &gt; publish the public key, and anyone can     |
+|                      | &gt; send messages only the owner can decrypt.  |
+|                      | &gt; The public key thereby functions as the    |
+|                      | &gt; public address of its owner.               |
++----------------------+----------------------------------------------+
+| Root hash            | &gt; The root hash or Merkle root is the result |
+|                      | &gt; of a hash/ Merkle tree.                    |
++----------------------+----------------------------------------------+
+| Scalability          | &gt; Scalability refers to the ability of a     |
+|                      | &gt; blockchain to handle increased amounts of  |
+|                      | &gt; transactions.                              |
++----------------------+----------------------------------------------+
+| Smart contracts      | Smart contracts are self-executing contracts |
+|                      | where the terms of the agreement between the |
+|                      | contract parties are directly written in     |
+|                      | lines of code.                               |
++----------------------+----------------------------------------------+</p>
+<p>+---------------+-----------------------------------------------------+
+| Smart lock    | A smart lock is an electromechanical lock designed  |
+|               | to perform locking and unlocking operations on a    |
+|               | door                                                |
+|               |                                                     |
+|               | &gt; when it receives such instructions from an        |
+|               | &gt; authorised device using a wireless protocol and a |
+|               | &gt; cryptographic key to execute the authorisation    |
+|               | &gt; process.                                          |
++===============+=====================================================+
+| Soft fork     | &gt; A soft fork is a way to update a blockchain       |
+|               | &gt; protocol without creating a splitting of the      |
+|               | &gt; network between nodes and clients that have       |
+|               | &gt; updated their systems and those who have not.     |
+|               | &gt; This means updated and noneupdated nodes can      |
+|               | &gt; still communicate.                                |
++---------------+-----------------------------------------------------+
+| Solidity      | &gt; Solidity is a contract-oriented, high-level       |
+|               | &gt; programming language for implementing smart       |
+|               | &gt; contracts.                                        |
++---------------+-----------------------------------------------------+
+| SSH           | &gt; Secure Shell (SSH) is a cryptographic network     |
+|               | &gt; protocol for operating network services securely  |
+|               | &gt; over an unsecured network. SSH provides a secure  |
+|               | &gt; channel over an unsecured network in a            |
+|               | &gt; client-server architecture by connecting an SSH   |
+|               | &gt; client application with an SSH server. Common     |
+|               | &gt; applications include remote command-line login    |
+|               | &gt; and remote command execution, but any network     |
+|               | &gt; service can be secured with SSH                   |
++---------------+-----------------------------------------------------+
+| Sybil attacks | &gt; The Sybil attack in computer security is an       |
+|               | &gt; attack wherein a reputation system is subverted   |
+|               | &gt; by forging identities in peer-to-peer networks.   |
++---------------+-----------------------------------------------------+
+| Token         | &gt; A token is an object that represents something    |
+|               | &gt; else. Cryptocurrency tokens are entries on the    |
+|               | &gt; blockchain that can be reassigned to a new owner  |
+|               | &gt; using a private key. Two main types of tokens can |
+|               | &gt; be differentiated into native tokens and          |
+|               | &gt; asset-backed tokens. Native tokens have some      |
+|               | &gt; value due to the utility they provide. Bitcoin on |
+|               | &gt; the Bitcoin blockchain and Ether on Ethereum are  |
+|               | &gt; two examples of native tokens. Asset-backed       |
+|               | &gt; tokens are claims on an underlying asset from a   |
+|               | &gt; specific issuer.                                  |
++---------------+-----------------------------------------------------+</p>
+<p>+------------------+--------------------------------------------------+
+| Tokenisation     | &gt; The process of linking an asset with a token   |
+|                  | &gt; on the blockchain.                             |
++==================+==================================================+
+| Transaction fees | Transaction fees are the price of a transaction  |
+|                  | on the blockchain. This price can fluctuate      |
+|                  | depending on the demand for transactions given a |
+|                  | fixed supply.                                    |
++------------------+--------------------------------------------------+
+| Validation       | &gt; Validation is the process of checking whether  |
+|                  | &gt; the transactions sent are correct. The miner   |
+|                  | &gt; validating the transaction will check whether  |
+|                  | &gt; the sender has enough funds to execute the     |
+|                  | &gt; transaction.                                   |
++------------------+--------------------------------------------------+
+| Wallet           | A cryptocurrency wallet is a software that       |
+|                  | stores the private keys that show the ownership  |
+|                  | of a public key representing a certain amount of |
+|                  | cryptocurrency.                                  |
++------------------+--------------------------------------------------+
+| UTXO             | &gt; UTXO or unspent transaction outputs are a      |
+|                  | &gt; concept used by Bitcoin to keep balances on    |
+|                  | &gt; the blockchain. Rather than using accounts,    |
+|                  | &gt; Bitcoin requires the user to have UTXO to make |
+|                  | &gt; transactions. New UTXOs are created as the     |
+|                  | &gt; output of a transaction, and the same amount   |
+|                  | &gt; of UTXO used as input in the transaction       |
+|                  | &gt; (spent) are removed from the Bitcoin network.  |
++------------------+--------------------------------------------------+</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="contributors.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="references.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="contributors.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="references.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

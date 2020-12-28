@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Blockchain as a Distributed Ledger Technology - Blockchain: A New Socio-Technical Environment</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Blockchain as a Historical Construct</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> The Design and Implementation of the Bitcoin Protocol</a></li><li class="chapter-item expanded "><a href="chapter_3.html" class="active"><strong aria-hidden="true">3.</strong> Blockchain as a Distributed Ledger Technology</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Blockchain Socialisation Patterns</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Designing Through Blockchain </a></li><li class="chapter-item expanded "><a href="conclusion.html"><strong aria-hidden="true">6.</strong> Conclusion</a></li><li class="chapter-item expanded affix "><a href="contributors.html">Contributors</a></li><li class="chapter-item expanded affix "><a href="glossary.html">Glossary</a></li><li class="chapter-item expanded affix "><a href="references.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blockchain: A New Socio-Technical Environment</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#3-blockchain-as-a-distributed-ledger-technology" id="3-blockchain-as-a-distributed-ledger-technology">3. Blockchain as a Distributed Ledger Technology</a></h1>
+<p>We have seen how the field expanded considerably as the Bitcoin
+project progressed. The emergence of new applications as well as
+changes and extensions to the code led to the objectification of
+Bitcoin's conceptual structure. Attention gradually shifted away from
+the Bitcoin project as a whole and towards one of the technical
+concepts underpinning it: blockchain.</p>
+<p>This chapter explains how the success of Bitcoin actually led to the
+objectification of blockchain technology, when the technical concept
+that permitted the operation and administration of Bitcoin became an
+object of study in itself. We then examine how the concept became
+relevant to the handling of all types of transactions. Lastly, we look
+at the ways in which industrial sectors have tried to adapt the
+concept to their requirements by integrating other conceptual and
+semantic changes -- from blockchain to distributed ledgers.</p>
+<h2><a class="header" href="#31-other-applications-of-the-bitcoin-protocol" id="31-other-applications-of-the-bitcoin-protocol">3.1. Other applications of the Bitcoin protocol</a></h2>
+<p>Namecoin was the first project to use the Bitcoin protocol for a type
+of asset other than money. In 203. a discussion took place on the
+#bitcoin-dev IRC channel regarding the possibility of using the
+Bitcoin protocol to create a DNS system for generating domain names
+that could circumvent the risk of the Bitcoin domain being censored,
+as Wikileaks had been. The Namecoin code base consists of the Bitcoin
+code base with some relatively minor changes and a few additional
+features. In 2012, the American engineer J.R. Willett was seeking ways
+of promoting greater acceptance of Bitcoin by the general public.
+Rejecting the idea of creating a new cryptocurrency to compete with
+Bitcoin, he designed a new feature within the Bitcoin protocol
+intended to serve as a base on which everyone could build their own
+currencies. Mastercoin software (today OmniLayer), which implements
+this new feature, provides the tools required to design and publish
+proprietary currencies with their own rules by configuring a new
+token. The idea of layering other software on top of Bitcoin arose
+from the custom of stacking protocols (for example, the HTTP protocol
+is stacked on top of TCP/IP).</p>
+<p>The concept of adding new layers to the Bitcoin protocol was then
+tested for other applications. The challenge was to find ways of using
+the Bitcoin protocol to represent other assets. These included
+personalised currencies and financial products like Colourcoin,
+property ownership (Smartproperty), and even contractual relationships
+for executing clauses (Smartcontract) and the management of
+organisations (DAOs). In 2013 the Colourcoin project published its
+prospectus and described the situation in the following terms:</p>
+<p>&quot;The natural question is: is it possible to use the same functionality
+for other applications as well? The answer, it turns out, is yes. The
+fundamental innovation behind Bitcoin, that of using cryptographic
+proof-of-work to maintain a secure distributed database, is good for
+more than just the single limited-supply currency originally envisioned
+by Satoshi Nakamoto in 2009; exactly the same technology can be used to
+maintain ownership of company shares, 'smart property', alternative
+currencies, bank deposits and much more. Anything which is representable
+as a digital asset, and a 'rivalrous good', meaning that only one person
+can own it at a time, is potentially fair game for representation in the
+Bitcoin blockchain.&quot;</p>
+<h2><a class="header" href="#32-the-objectification-of-blockchain" id="32-the-objectification-of-blockchain">3.2. The objectification of blockchain</a></h2>
+<p>In 2014, Vitalik Butarin, one of the authors of whitepapers for
+Colored Coins, finalised the conceptualisation of Ethereum: a new
+platform that used a more generalised scripting language than Bitcoin
+and intended to facilitate decentralised application development.</p>
+<p>Ethereum borrows most of Bitcoin's design concepts but operates on its
+own network with its own protocol. It also has its own cryptocurrency,
+called Ether.</p>
+<p>Ethereum implements the smart-contract concept invented by Nick Szabo.
+In this context, however, the term 'smart-contract' is somewhat of a
+misnomer. It is actually a type of computer programme. Network users
+can run the programme whenever they want as long as they pay the costs
+of executing it. It can perform a variety of procedures, such as
+notarial and financial contracts, equipment rental, or equity sharing.
+The results, whether movement of Ethers or information storage are
+held in a type of distributed database: a blockchain.</p>
+<p>The blockchain is considered here to be a type of administrative
+ledger that is not managed from a single point but is distributed over
+the network. Despite this distributed architecture, the ledger
+establishes and maintains the uniqueness of an asset, or any piece of
+information for that matter. It establishes an inviolable link between
+an object and its identifier. For example, it guarantees that a
+Bitcoin has not been spent twice (the problem known as double
+spending), or that a property asset or contract has not been forged or
+registered twice. It is this technical characteristic that attracted
+the attention of major industrial and financial players and resulted
+in services being developed to meet the needs of specific industrial
+sectors and groups.</p>
+<p>For example, Ripple is a settlement infrastructure system that enables
+payments to be sent and received without an intermediary, regardless
+of their value or the financial institution. The project relies on a
+database that records all the information from all Ripple accounts.
+Financial transactions are verified, validated and compared in a
+closed network of servers that can belong to anyone, including banks
+and market players.</p>
+<p>Another example is the Hyperledger project, a blockchain development
+platform created in 2015. Hosted by the Linux Foundation, Hyperledger
+was founded by major industry players such as IBM, Intel, Cisco
+Accenture, and J.P. Morgan. Hyperledger aims to improve the
+performance and reliability of blockchains and distributed ledger
+techniques to enable them to handle global business transactions for
+leading technology, finance, and supply-chain companies. The platform
+combines a number of development structures (frameworks) and tools to
+explore the capabilities of distributed ledger techniques when faced
+with a wide variety of problems, such as those of supply chains and
+digital identities. The goal of Hyperledger is to enable large
+industrial companies to create blockchains that guarantee the
+confidentiality of certain types of information. The Fabric project
+was one of the first Hyperledger projects: a protocol for the
+deployment and exploitation of permissioned blockchains. Like all
+Hyperledger projects, Fabric is hosted by the Linux Foundation.
+Members must abide by a code of conduct, and the protocol is shared
+under a free opensource licence (an Apache 2 licence, which is
+GPL-compatible).</p>
+<h2><a class="header" href="#33-the-emergence-of-permissioned-distributed-ledger-techniques" id="33-the-emergence-of-permissioned-distributed-ledger-techniques">3.3. The emergence of permissioned distributed ledger techniques</a></h2>
+<p>In the Bitcoin and Ethereum blockchains, anyone can join the network.
+This means that anyone can read and write transactions and take part
+in validating them; the blockchain is considered to be public. In
+2015, developments began that sought to create distinctions between
+public, private and consortium blockchains.</p>
+<p>In 2015, the family office R3 CEV (Crypto Consulting Exchanges
+Ventures), chaired by David E. Rutter, a former Wall Street executive,
+organised a number of roundtables for those working specifically on
+blockchain projects such as Ripple, the beginnings of the Hyperledger
+project as well as other major public and private players in the
+banking industry like the Bank of England and Bank of America. These
+roundtables were intended to examine the transformation of the finance
+sector by cryptocurrencies. One of the issues discussed was how banks
+could trade foreign currencies on community-managed ledgers, as in a
+blockchain.</p>
+<p>Following the roundtable discussions, R3 published an article
+summarising the lessons learned: <em>Consensus-as-a-Service: A Brief
+Report on the Emergence Of Permissioned, Distributed Ledger Systems</em>.
+The article raised the issue of permissions, i.e., the ways in which
+transactions are validated, differentiating between Bitcoin and
+distributed ledgers. For the author, distributed ledger models like
+Hyperledger and Ripple solved some of the problems associated with
+Bitcoin and Ethereum in that the information was managed by an
+identified community and authenticated using a permission system. The
+author, Tim Swanson, concluded that this capacity enabled the various
+distributed ledgers to be interoperable.</p>
+<p>The article laid the foundations for differentiating between
+permissioned and permissionless blockchains, and also examined the use
+of private blockchains (Table 12). Unlike Ethereum and Bitcoin,
+so-called closed blockchains are forms of centralised ledgers, the
+decision-making powers for which are centralised within a single
+organisation. They can be used to test new techniques and increase
+expertise in this area. A consortium blockchain is a closed network
+that is partially decentralised and requires permission from members
+to join it. The power to audit it can be reserved for members and
+decisions regarding it are taken by this closed community. This aspect
+of permissioned blockchains serves to keep certain information
+confidential. The model is intended to prevent inappropriate sharing
+of customer information in that not all transactions can be shared
+with all network participants.</p>
+<p>Table 12. Permissioned and permissionless public and private
+blockchains.</p>
+<p>+----------------------+----------------------+----------------------+
+|                      | <strong>Permissionless</strong>   | <strong>Permissioned</strong>     |
+|                      |                      |                      |
+|                      | (no restrictions for | (transaction         |
+|                      | validators)          | validation is        |
+|                      |                      | limited to specific  |
+|                      |                      | users)               |
++======================+======================+======================+
+| &gt; <strong>Public</strong>         | All users can read   | All users can read   |
+| &gt;                    | transactions         | transactions         |
+| &gt; (No restrictions   |                      |                      |
+| &gt; on reading         | All users can        | Only certain users   |
+| &gt; blockchain         | validate             | can validate         |
+| &gt;                    | transactions         | transactions         |
+| &gt; data)              |                      |                      |
++----------------------+----------------------+----------------------+
+| <strong>Private</strong>          | Transactions can     | Transactions can     |
+|                      | only be read by      | only be read by      |
+| (Direct access to    | selected users       | selected users       |
+| blockchain data is   |                      |                      |
+| limited to specific  | All users can        | Among these users,   |
+| users)               | validate             | only those with      |
+|                      | transactions         | specific permissions |
+|                      |                      | can validate         |
+|                      |                      | transactions         |
++----------------------+----------------------+----------------------+</p>
+<p>R3 sent this paper to the banks with which it regularly worked,
+garnering a good deal of attention. In 2015, R3 and nine major
+financial players (Barclays, Commonwealth Bank of Australia, Credit
+Suisse, Goldman Sachs, J.P. Morgan, Royal Bank of Scotland, State
+Street, and UBS) founded an interbank consortium called the
+Distributed Ledger Group (later to take on the name R3). Between 2015
+and 2018, nearly 200 major players in industry and finance joined the
+consortium. They included Bank of America, Thomsons Reuters, Société
+Générale, UniCredit, BNP Paribas, Toyota Financial Services, and the
+Bank of Canada.</p>
+<p>The intention of this consortium was to create a framework, based on
+the Hyperledger model, for the development of distributed consortium
+ledgers in order to share information between companies in the banking
+sector. In 2016, the consortium announced the Corda software project,
+designed to record, execute, and manage the financial arrangements of
+companies within a community of financial institutions. The platform
+was also intended to be used to launch financial applications for a
+number of markets, including foreign exchange and loans.</p>
+<p>In 2016, the consortium announced that the source code for the Corda
+software was to be shared under the same licence as that of the
+Hyperledger projects: Apache 2.0. The use of this license demonstrated
+the formal rapprochement between the two projects, with Corda becoming
+a Hyperledger project, though remaining distinct.</p>
+<p>Some members left the consortium to develop their own networks. In
+2017, J.P. Morgan left the Hyperledger and Corda consortiums to
+develop Quorum, which was presented as a 'permissioned implementation
+of Ethereum supporting data privacy'. Quorum might be called a hybrid
+blockchain, in that it combines several characteristics of public and
+private blockchains. Like Ethereum, Quorum is shared on Github and
+under a free GPL (General Public Licence). Quorum determines which
+information should remain private and which information can be made
+public. Instead of transactions being shared privately within a
+consortium, they could now be displayed in other blockchains, such as
+Bitcoin. This feature enabled companies to use a number of ledgers and
+to selectively share information in the course of their business
+operations.</p>
+<h2><a class="header" href="#34-other-distributed-ledger-techniques" id="34-other-distributed-ledger-techniques">3.4. Other distributed ledger techniques</a></h2>
+<p>A dissection of the issue of distributed ledgers reveals that
+blockchain is not the only technique that can be used. The majority of
+distributed ledger implementations, like Bitcoin and Ethereum, are
+based on a blockchain, whether closed or consortium, such as
+Hyperledger or Corda, but other techniques have also been explored.
+The differences can include the ways in which transactions are stored
+in the ledgers, or the transaction validation rules themselves.</p>
+<p>For example, the Internet of Things Application (IOTA) is a
+distributed ledger that is not based on a blockchain, but on an
+open-source experimental protocol known as The Tangle. IOTA aims to
+provide a secure payment method for transactions between different
+devices connected via the Internet (the Internet of Things). It is
+designed to process micropayments and payments between devices,
+creating an entire machine-to-machine micro-economy. The very large
+number of possible transactions between connected objects in the IOTA
+project requires a highly scalable architecture, which is difficult
+for blockchains to achieve.</p>
+<p>Other experiments exist, such as the Hashgraph, another patented
+distributed ledger technique. Hashgraph is based on consensus and
+information-sharing techniques that differ from blockchain: the
+so-called 'Gossip about Gossip' technique. Hashgraph uses
+information-sharing and polling techniques that demand network
+participants share all their information, meaning that all
+participants are aware of all the information that has been created
+since the outset.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="chapter_2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="chapter_4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="chapter_2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="chapter_4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

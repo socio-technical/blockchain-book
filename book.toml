@@ -1,0 +1,9 @@
+[book]
+authors = ["Antoine Burret", "Simon Perdrisat"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Blockchain: A New Socio-Technical Environment"
+
+[build]
+build-dir = "docs"
