@@ -50,7 +50,7 @@ defining the real value of the end use of their product. The language
 of prototypes and betas has its own marketing value in appealing to
 *early adopters* (the first users of a service). It also serves to
 protect companies in legal terms and to guard against disappointment
-from end users (Figure 50).
+from end users (Figure 11).
 
 ![](media/fig11-app_store_warning.png)
 
@@ -96,7 +96,7 @@ monetary policy and sovereignty. The Open Money Initiative, an
 independent initiative funded by a number of blockchain players along
 with the Human Rights Foundation, examines how people use money in the
 context of closed economies and collapsing monetary systems, for
-instance in Venezuela (Figure 51).
+instance in Venezuela (Figure 12).
 
 ![](media/fig12-tweet_open_money.png)
 
