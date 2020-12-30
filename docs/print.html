@@ -881,32 +881,49 @@ of customer information in that not all transactions can be shared
 with all network participants.</p>
 <p>Table 12. Permissioned and permissionless public and private
 blockchains.</p>
-<p>+----------------------+----------------------+----------------------+
-|                      | <strong>Permissionless</strong>   | <strong>Permissioned</strong>     |
-|                      |                      |                      |
-|                      | (no restrictions for | (transaction         |
-|                      | validators)          | validation is        |
-|                      |                      | limited to specific  |
-|                      |                      | users)               |
-+======================+======================+======================+
-| &gt; <strong>Public</strong>         | All users can read   | All users can read   |
-| &gt;                    | transactions         | transactions         |
-| &gt; (No restrictions   |                      |                      |
-| &gt; on reading         | All users can        | Only certain users   |
-| &gt; blockchain         | validate             | can validate         |
-| &gt;                    | transactions         | transactions         |
-| &gt; data)              |                      |                      |
-+----------------------+----------------------+----------------------+
-| <strong>Private</strong>          | Transactions can     | Transactions can     |
-|                      | only be read by      | only be read by      |
-| (Direct access to    | selected users       | selected users       |
-| blockchain data is   |                      |                      |
-| limited to specific  | All users can        | Among these users,   |
-| users)               | validate             | only those with      |
-|                      | transactions         | specific permissions |
-|                      |                      | can validate         |
-|                      |                      | transactions         |
-+----------------------+----------------------+----------------------+</p>
+<table>
+<tbody>
+  <tr>
+    <td></td>
+    <td>
+    	<p><b>Permissionless</b></p>           
+		<p>(no restrictions for validators)</p>
+    </td>
+    <td>
+    	<p><b>Permissioned</b></p>
+		<p>(transaction validation is limited to specific users)</p>
+	</td>
+  </tr>
+  <tr>
+    <td>
+    	<p><b>Public</b></p>
+		<p>(No restrictions on reading blockchain data)</p>
+    </td>
+    <td>
+    	<p>All users can transactions</p>
+    	<p>All users can validate transactions</p>
+    </td>
+    <td>
+    	<p>All users can read transactions</p>
+    	<p>Only certain users can validate transactions</p>     
+    </td>
+  </tr>
+  <tr>
+    <td>
+    	<p><b>Private</b></p>        
+        <p>(Direct access to blockchain data is limited to specific users)</p>
+    </td>
+    <td>
+    	<p>Transactions can only be read by selected users</p> 
+        <p>All users can validate transactions</p>   
+    </td>
+    <td>
+    	<p>Transactions can only be read by selected users</p>
+    	<p>Among these users, only those with specific permissions can validate transactions</p>       
+    </td>
+  </tr>
+</tbody>
+</table>
 <p>R3 sent this paper to the banks with which it regularly worked,
 garnering a good deal of attention. In 2015, R3 and nine major
 financial players (Barclays, Commonwealth Bank of Australia, Credit
@@ -1495,7 +1512,7 @@ which leads to the continued development of the software independently
 of the community that had previously been in charge of it. Using the
 existing source code as the starting point, the two groups continue
 along independent development paths. A fork therefore results in the
-creation of two separate programmes (Figure 46). For example,
+creation of two separate programmes (Figure 7). For example,
 contributors to Bitcoin's software worked on its GitHub repository by
 proposing (making 'pull requests') and confirming changes ('commits').
 These were then discussed and possibly accepted ('merged') into the
@@ -1503,7 +1520,7 @@ These were then discussed and possibly accepted ('merged') into the
 rejected changes created a fork which led to a new parallel
 blockchain. These various blockchains then cohabited with Bitcoin,
 gaining their own names, such as Litecoin and Bitcoin Cash.</p>
-<p><img src="media/image10.jpg" alt="" /></p>
+<p><img src="media/fig7-main_forks.png" alt="" /></p>
 <p>Figure 7. The main forks of Bitcoin.</p>
 <p>Though relatively rarely implemented, the fork is nevertheless an
 important mechanism in the world of open-source software. A fork is
@@ -1536,16 +1553,16 @@ valid. In order to impose itself, this type of fork only requires most
 of the nodes to follow the new rule. An example of a soft fork might
 be the addition of a new type of transaction. Only blocks that contain
 the new type of transaction are rejected by the initial branch and the
-'old miners' (Figure 47).</p>
-<p><img src="media/image12.jpg" alt="" /></p>
+'old miners' (Figure 8).</p>
+<p><img src="media/fig8-soft-fork.svg" alt="" /></p>
 <p>Figure 8. A soft fork: blocks violating new rules are made stale by the
 upgraded mining majority.</p>
 <p>A 'hard fork' is considered more radical because it can validate
 blocks that were formerly invalid. Unlike a soft fork, a hard fork
 does not require all the nodes to follow the new rule in order to
 impose itself. The chains diverge to create two ledgers with the same
-history up to the fork and diverge from that moment on (Figure 48).</p>
-<p><img src="media/image14.jpg" alt="" /></p>
+history up to the fork and diverge from that moment on (Figure 9).</p>
+<p><img src="media/fig9-hard_fork.svg" alt="" /></p>
 <p>Figure 9. A hard fork: Non-upgraded nodes reject the new rules,
 diverging the chain.</p>
 <p>A hard fork can be used to add new features, as in 2017, when a
@@ -1923,7 +1940,7 @@ platform, proving that they are the same person.</p>
 blockchain, all transactions on this blockchain are legally
 identified. It also potentially enables them to legally prove their
 identity on other blockchains and other systems.</p>
-<p><img src="media/todo.jpg" alt="" /></p>
+<p><img src="media/fig13-keys_exchange.svg" alt="" /></p>
 <p>Figure 13. In each blockchain you write a message that identifies your
 key in the other blockchain. This proves you have access to both keys.</p>
 <p>This distinction between an identity used on a network and an

@@ -304,7 +304,7 @@ blockchain, all transactions on this blockchain are legally
 identified. It also potentially enables them to legally prove their
 identity on other blockchains and other systems.
 
-![](media/todo.jpg)
+![](media/fig13-keys_exchange.svg)
 
 Figure 13. In each blockchain you write a message that identifies your
 key in the other blockchain. This proves you have access to both keys.

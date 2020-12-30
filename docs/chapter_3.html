@@ -317,32 +317,49 @@ of customer information in that not all transactions can be shared
 with all network participants.</p>
 <p>Table 12. Permissioned and permissionless public and private
 blockchains.</p>
-<p>+----------------------+----------------------+----------------------+
-|                      | <strong>Permissionless</strong>   | <strong>Permissioned</strong>     |
-|                      |                      |                      |
-|                      | (no restrictions for | (transaction         |
-|                      | validators)          | validation is        |
-|                      |                      | limited to specific  |
-|                      |                      | users)               |
-+======================+======================+======================+
-| &gt; <strong>Public</strong>         | All users can read   | All users can read   |
-| &gt;                    | transactions         | transactions         |
-| &gt; (No restrictions   |                      |                      |
-| &gt; on reading         | All users can        | Only certain users   |
-| &gt; blockchain         | validate             | can validate         |
-| &gt;                    | transactions         | transactions         |
-| &gt; data)              |                      |                      |
-+----------------------+----------------------+----------------------+
-| <strong>Private</strong>          | Transactions can     | Transactions can     |
-|                      | only be read by      | only be read by      |
-| (Direct access to    | selected users       | selected users       |
-| blockchain data is   |                      |                      |
-| limited to specific  | All users can        | Among these users,   |
-| users)               | validate             | only those with      |
-|                      | transactions         | specific permissions |
-|                      |                      | can validate         |
-|                      |                      | transactions         |
-+----------------------+----------------------+----------------------+</p>
+<table>
+<tbody>
+  <tr>
+    <td></td>
+    <td>
+    	<p><b>Permissionless</b></p>           
+		<p>(no restrictions for validators)</p>
+    </td>
+    <td>
+    	<p><b>Permissioned</b></p>
+		<p>(transaction validation is limited to specific users)</p>
+	</td>
+  </tr>
+  <tr>
+    <td>
+    	<p><b>Public</b></p>
+		<p>(No restrictions on reading blockchain data)</p>
+    </td>
+    <td>
+    	<p>All users can transactions</p>
+    	<p>All users can validate transactions</p>
+    </td>
+    <td>
+    	<p>All users can read transactions</p>
+    	<p>Only certain users can validate transactions</p>     
+    </td>
+  </tr>
+  <tr>
+    <td>
+    	<p><b>Private</b></p>        
+        <p>(Direct access to blockchain data is limited to specific users)</p>
+    </td>
+    <td>
+    	<p>Transactions can only be read by selected users</p> 
+        <p>All users can validate transactions</p>   
+    </td>
+    <td>
+    	<p>Transactions can only be read by selected users</p>
+    	<p>Among these users, only those with specific permissions can validate transactions</p>       
+    </td>
+  </tr>
+</tbody>
+</table>
 <p>R3 sent this paper to the banks with which it regularly worked,
 garnering a good deal of attention. In 2015, R3 and nine major
 financial players (Barclays, Commonwealth Bank of Australia, Credit

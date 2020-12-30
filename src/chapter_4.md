@@ -575,7 +575,7 @@ which leads to the continued development of the software independently
 of the community that had previously been in charge of it. Using the
 existing source code as the starting point, the two groups continue
 along independent development paths. A fork therefore results in the
-creation of two separate programmes (Figure 46). For example,
+creation of two separate programmes (Figure 7). For example,
 contributors to Bitcoin's software worked on its GitHub repository by
 proposing (making 'pull requests') and confirming changes ('commits').
 These were then discussed and possibly accepted ('merged') into the
@@ -584,7 +584,7 @@ rejected changes created a fork which led to a new parallel
 blockchain. These various blockchains then cohabited with Bitcoin,
 gaining their own names, such as Litecoin and Bitcoin Cash.
 
-![](media/image10.jpg)
+![](media/fig7-main_forks.png)
 
 Figure 7. The main forks of Bitcoin.
 
@@ -622,9 +622,9 @@ valid. In order to impose itself, this type of fork only requires most
 of the nodes to follow the new rule. An example of a soft fork might
 be the addition of a new type of transaction. Only blocks that contain
 the new type of transaction are rejected by the initial branch and the
-'old miners' (Figure 47).
+'old miners' (Figure 8).
 
-![](media/image12.jpg)
+![](media/fig8-soft-fork.svg)
 
 Figure 8. A soft fork: blocks violating new rules are made stale by the
 upgraded mining majority.
@@ -633,9 +633,9 @@ A 'hard fork' is considered more radical because it can validate
 blocks that were formerly invalid. Unlike a soft fork, a hard fork
 does not require all the nodes to follow the new rule in order to
 impose itself. The chains diverge to create two ledgers with the same
-history up to the fork and diverge from that moment on (Figure 48).
+history up to the fork and diverge from that moment on (Figure 9).
 
-![](media/image14.jpg)
+![](media/fig9-hard_fork.svg)
 
 Figure 9. A hard fork: Non-upgraded nodes reject the new rules,
 diverging the chain.
