@@ -2,6 +2,11 @@
 
 By Antoine Burret and [Simon Perdrisat](https://perdrisat.com)
 
+<small>
+The Computer Science Centre, Institute of Information Service Science, University of Geneva
+<br />[Cintcom Foundation](https://cintcom.org)
+</small>
+
 ![](media/network.webp)
 
 Blockchain is widely considered a new key technology. This study examines how blockchain became mainstream and provides the much-needed social contextualisation of blockchain. It explores the origins of blockchain in the early history of information technology and computer networks. The study also reveals the impact blockchain has on industrial and public spaces. Finally, it discusses the social implications and challenges of blockchain against the background of a new socio-technical environment.
