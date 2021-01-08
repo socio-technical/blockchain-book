@@ -1,6 +1,6 @@
 # Blockchain: A New Socio-Technical Environment
 
-By Antoine Burret and Simon Perdrisat
+By Antoine Burret and [Simon Perdrisat](https://perdrisat.com)
 
 ![](media/network.webp)
 
@@ -10,6 +10,6 @@ Blockchain is widely considered a new key technology. This study examines how bl
 
 First published 2019
 
-This study was comissioned by [TA-Swiss](https://www.ta-swiss.ch/) and was originaly publish in [Blockchain: Capabilities, Economic Viability, and the Socio-Technical Environment](https://vdf.ch/blockchain-capabilities-economic-viability-and-the-socio-technical-environment.html).
+This study was comissioned by [TA-Swiss](https://www.ta-swiss.ch/) and was originaly published in [Blockchain: Capabilities, Economic Viability, and the Socio-Technical Environment](https://vdf.ch/blockchain-capabilities-economic-viability-and-the-socio-technical-environment.html).
 
 [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
