@@ -4,7 +4,8 @@ By Antoine Burret and [Simon Perdrisat](https://perdrisat.com)
 
 <small>
 The Computer Science Centre, Institute of Information Service Science, University of Geneva
-<br />[Cintcom Foundation](https://cintcom.org)
+<br />
+<a href="https://cintcom.org">Cintcom Foundation</a>
 </small>
 
 ![](media/network.webp)
